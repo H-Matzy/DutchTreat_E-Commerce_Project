@@ -1,4 +1,5 @@
 ﻿using DutchTreat.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
@@ -10,12 +11,12 @@ namespace TestApplication.Controllers
     public class AppController : Controller
     {
         private readonly IMailService _mailService;
-        private readonly DutchContext _context;
+        private readonly IDutchRepository _repository;
 
-        public AppController(IMailService mailService, DutchContext context)
+        public AppController(IMailService mailService, IDutchRepository repository)
         {
             _mailService = mailService;
-            _context = context;
+            _repository = repository;
         }
         public IActionResult Index()
         {
@@ -37,10 +38,6 @@ namespace TestApplication.Controllers
                 ViewBag.UserMessage = "Mail Sent";
                 ModelState.Clear();
             }
-            else
-            {
-
-            }
             return View();
         }
         [HttpGet("about")]
@@ -49,12 +46,13 @@ namespace TestApplication.Controllers
             ViewBag.Title = "About";
             return View();
         }
-
+        
+        [Authorize]
         public IActionResult Shop()
         {
-            var results = _context.Products.OrderBy(p => p.Category).ToList();
+            var results = _repository.GetAllProducts();
 
-            return View(results.ToList());
+            return View(results);
 
         }
     }

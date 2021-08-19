@@ -21,8 +21,6 @@ C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspN
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Connections.Abstractions.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspNetCore.CookiePolicy.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cors.dll
-C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.Abstractions.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.AspNetCore.DataProtection.Extensions.dll
@@ -107,8 +105,6 @@ C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Exte
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Extensions.Hosting.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Extensions.Http.dll
-C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Extensions.Identity.Core.dll
-C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.Abstractions.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Extensions.Localization.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\refs\Microsoft.Extensions.Logging.Abstractions.dll
@@ -384,6 +380,16 @@ C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\DutchTreat.pdb
 C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\DutchTreat.genruntimeconfig.cache
 C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\DutchTreat.csproj.AssemblyReference.cache
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\config.json
-C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\ref\DutchTreat.dll
-C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\staticwebassets\DutchTreat.StaticWebAssets.xml
 C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\Razor\Views\App\Shop.cshtml.g.cs
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Data\art.json
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\refint\DutchTreat.dll

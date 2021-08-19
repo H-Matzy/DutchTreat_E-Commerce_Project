@@ -1,14 +1,12 @@
-﻿using DutchTreat.Data.Entities;
+﻿using System;
+using DutchTreat.Data.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace DutchTreat.Data
 {
-    public class DutchContext : DbContext
+    public class DutchContext : IdentityDbContext<UserStorage>
     {
         private IConfiguration _config;
 
@@ -20,9 +18,29 @@ namespace DutchTreat.Data
         public DbSet<Order> Orders { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-                base.OnConfiguring(optionsBuilder);
+            base.OnConfiguring(optionsBuilder);
 
             optionsBuilder.UseSqlServer(_config["ConnectionStrings:DutchOven"]);
+        }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Product>()
+              .Property(p => p.Price)
+              .HasColumnType("money");
+
+            modelBuilder.Entity<OrderItem>()
+              .Property(o => o.UnitPrice)
+              .HasColumnType("money");
+
+            modelBuilder.Entity<Order>()
+              .HasData(new Order()
+              {
+                  Id = 1,
+                  OrderDate = DateTime.UtcNow,
+                  OrderNumber = "12345"
+              });
         }
     }
 }

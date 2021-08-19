@@ -1,10 +1,13 @@
 using DutchTreat.Data;
+using DutchTreat.Data.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Reflection;
 using TestApplication.Services;
 
 namespace TestApplication
@@ -21,10 +24,24 @@ namespace TestApplication
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddIdentity<UserStorage, IdentityRole>(cfg =>
+            {
+                cfg.User.RequireUniqueEmail = true;
+            })
+                .AddEntityFrameworkStores<DutchContext>();
+
             services.AddDbContext<DutchContext>();
             services.AddControllersWithViews()
-            .AddRazorRuntimeCompilation();
+            .AddRazorRuntimeCompilation()
+            .AddNewtonsoftJson(cfg => cfg.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddRazorPages();
+
+            services.AddScoped<IDutchRepository, DutchRepository>();
+
+            services.AddTransient<DutchSeeder>();
+
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
             services.AddTransient<IMailService, NullMailService>();
 
         }
@@ -50,7 +67,6 @@ namespace TestApplication
                 cfg.MapControllerRoute("Default", "/{controller}/{action}/{id?}",
                     new { controller = "App", action = "Index" });
             });
-
         }
     }
 }

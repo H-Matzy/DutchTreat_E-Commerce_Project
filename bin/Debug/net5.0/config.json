@@ -1,5 +1,12 @@
 {
   "ConnectionStrings": {
     "DutchOven": "Data Source=EC02;Initial Catalog=DutchOven;Integrated Security=True; MultipleActiveResultSets=true"
+  },
+
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft":  "Warning"
+    }
   }
 }
