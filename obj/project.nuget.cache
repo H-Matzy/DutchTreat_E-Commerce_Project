@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DMio85MurINFLeEUNxoLX+e4XKSrRh2MO+VlfluqPBxZcM3040eiPwHe0WeTdgQ5sSs7mBRkSPygrUuZ+q39CQ==",
+  "dgSpecHash": "z8/1oLikdtp1rqHbBtpmAtwApegRRnglCSVY8ARE7TYfiKQALsJTr5RbNV0rExEFQuHa3tzoRI7+iE0631I1Dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\HMatz\\source\\repos\\TestApplication\\DutchTreat.csproj",
   "expectedPackageFiles": [
@@ -116,8 +116,7 @@
     "C:\\Users\\HMatz\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\HMatz\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\HMatz\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\HMatz\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\HMatz\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.8\\microsoft.netcore.app.host.win-x64.5.0.8.nupkg.sha512"
+    "C:\\Users\\HMatz\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

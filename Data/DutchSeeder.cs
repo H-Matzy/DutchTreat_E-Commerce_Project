@@ -26,11 +26,11 @@ namespace DutchTreat.Data
             _userManager = userManager;
         }
 
-        public async Task Seed()
+        public async Task SeedAsync()
         {
             _ctx.Database.EnsureCreated();
 
-            UserStorage user = await _userManager.FindByEmailAsync("shawn@dutchtreat.com");
+            UserStorage user = await _userManager.FindByEmailAsync("haydenmatz97@gmail.com");
 
             if (user == null)
             {

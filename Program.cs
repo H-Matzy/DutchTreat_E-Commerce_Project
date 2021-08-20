@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using System.IO;
 using DutchTreat.Data;
 
-namespace TestApplication
+namespace DutchTreat
 {
     public class Program
     {
@@ -29,7 +29,7 @@ namespace TestApplication
             using (var scope = scopeFactory.CreateScope()) 
             {
                 var seeder =scope.ServiceProvider.GetService<DutchSeeder>();
-                seeder.Seed().Wait();
+                seeder.SeedAsync().Wait();
             }
             
         }

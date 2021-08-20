@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
-using TestApplication.Services;
-using TestApplication.ViewModels;
+using DutchTreat.Services;
+using DutchTreat.ViewModels;
 
-namespace TestApplication.Controllers
+namespace DutchTreat.Controllers
 {
     public class AppController : Controller
     {

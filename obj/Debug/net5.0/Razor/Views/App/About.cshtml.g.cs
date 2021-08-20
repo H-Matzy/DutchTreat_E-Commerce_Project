@@ -14,14 +14,14 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
 #line 1 "C:\Users\HMatz\source\repos\TestApplication\Views\_ViewImports.cshtml"
-using TestApplication.Controllers;
+using DutchTreat.Controllers;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
 #line 2 "C:\Users\HMatz\source\repos\TestApplication\Views\_ViewImports.cshtml"
-using TestApplication.ViewModels;
+using DutchTreat.ViewModels;
 
 #line default
 #line hidden
@@ -34,7 +34,7 @@ using DutchTreat.Data.Entities;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"06ee29cb3b11fb6630ec1b8bd38a8d6b14477fa5", @"/Views/App/About.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d314653176225592cf6efcce3fb78b3b3f84333c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"402ff29ed5304f90d7247425045b59e26db665d3", @"/Views/_ViewImports.cshtml")]
     public class Views_App_About : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

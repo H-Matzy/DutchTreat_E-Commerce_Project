@@ -392,4 +392,6 @@ C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.AspNetCor
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\refint\DutchTreat.dll
+C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\HMatz\source\repos\TestApplication\bin\Debug\net5.0\ref\DutchTreat.dll
+C:\Users\HMatz\source\repos\TestApplication\obj\Debug\net5.0\staticwebassets\DutchTreat.StaticWebAssets.xml

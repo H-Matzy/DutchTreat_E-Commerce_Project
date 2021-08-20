@@ -1,4 +1,4 @@
-﻿namespace TestApplication.Services
+﻿namespace DutchTreat.Services
 {
     public interface IMailService
     {

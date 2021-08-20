@@ -8,9 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Reflection;
-using TestApplication.Services;
+using DutchTreat.Services;
 
-namespace TestApplication
+namespace DutchTreat
 {
     public class Startup
     {
@@ -30,6 +30,7 @@ namespace TestApplication
                 cfg.User.RequireUniqueEmail = true;
             })
                 .AddEntityFrameworkStores<DutchContext>();
+
 
             services.AddDbContext<DutchContext>();
             services.AddControllersWithViews()
@@ -60,6 +61,9 @@ namespace TestApplication
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
 
             app.UseEndpoints(cfg =>
             {

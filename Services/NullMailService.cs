@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TestApplication.Services
+namespace DutchTreat.Services
 {
     public class NullMailService : IMailService
     {

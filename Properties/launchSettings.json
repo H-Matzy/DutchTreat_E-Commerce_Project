@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Production"
       }
     },
-    "TestApplication": {
+    "DutchTreat": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
